@@ -1,0 +1,732 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Malabar Techfest 2023</title>
+
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/logos/favicon.ico' %}">
+    <!-- Instagram icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/techfest.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+
+  </head>
+
+<body>
+
+
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="{% url 'landing_pg' %}">
+        <img src="{% static 'assets/logos/mtf-logo.png' %}" height="70" width="120" alt="Your Logo"/>
+
+        <em>2k23</em>
+      </a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+
+
+
+      <ul class="main-menu">
+        <li><a href="#section1">Home</a></li>
+        <li class="has-submenu"><a href="#">Explore</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Why MTF?</a></li>
+            <li><a href="{% url 'project_treasury' %}" class="external" target="_blank">More Events</a></li>
+            <li><a href="#section3">Join Us</a></li>
+            <li><a href="https://instagram.com/malabartechfest?igshid=NGVhN2U2NjQ0Yg==" rel="sponsored" class="external">Follow us</a></li>
+          </ul>
+        </li>
+        <li><a href="#section4">Events</a></li>
+        <li><a href="#section7">Contact</a></li>
+        <li><a href="https://www.malabarcet.ac.in/" class="external" >Mcet</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="{% static 'assets/images/tech-vid.mp4' %}"type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <h6>Connecting the Dots of Innovation</h6>
+              <h2><em>MALABAR</em> TECHFEST</h2>
+              <div class="main-button">
+                  <div><a href="{% url 'project_treasury' %}" target="_blank">Discover more</a></div>
+              </div>
+          </div>
+      </div>
+      
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-pencil"></i>Competitions</h4>
+              </div>
+              <div class="content-hide">
+                <p>Get ready to put your skills to the test with a wide range of technical and non-technical competitions. Win prizes, recognition, and experience the thrill of healthy competition.</p>
+                <p class="hidden-sm">Get ready to put your skills to the test with a wide range of technical and non-technical competitions. Win prizes, recognition, and experience the thrill of healthy competition.</p>
+                <div class="scroll-to-section"><a href="#section4">Explore More.</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-graduation-cap"></i>Workshops</h4>
+              </div>
+              <div class="content-hide">
+                <p> Learn from experts in the field through hands-on workshops, where you can acquire new skills and knowledge.</p>
+                <p class="hidden-sm"> Learn from experts in the field through hands-on workshops, where you can acquire new skills and knowledge.</p>
+                <div class="scroll-to-section"><a href="#section4">Explore More.</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i>Exhibitions</h4>
+              </div>
+              <div class="content-hide">
+                <p>Explore cutting-edge innovations, projects, and technologies at our exhibitions. Witness the future in action!</p>
+                <p class="hidden-sm">Explore cutting-edge innovations, projects, and technologies at our exhibitions. Witness the future in action!</p>
+                <div class="scroll-to-section"><a href="#section4">Explore More.</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Why MTF?</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Tech Talks</a></li>
+              <li><a href='#tabs-2'>Talent Hunts</a></li>
+              <li><a href='#tabs-3'>Techathons</a></li>
+            </ul>
+
+
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-01.png' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4 >TECH<span style="color: #f5a425;"> TALKS</span></h4>
+                    <p>Join us for a journey through the cosmos of technology. TechTalks at MCET are your passport to the future.Visionaries, innovators, and trailblazers will take the stage to share their wisdom.</p>
+                    <p>Dive deep into the latest trends, unravel mysteries of the digital realm, and ignite your passion for innovation. The power to transform the world is at your fingertips. Be part of the revolution at TechTalks.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-02.png' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4 >TALENT<span style="color: #f5a425;"> HUNTS</span></h4>
+                    <p>Dazzle the stage, steal the spotlight. Our Talent Hunts are where stars are born. Show off your skills, from music and dance to coding and design. Let your talent shine, and let the world applaud.</p>
+                    <p>Join us, take that leap of faith, and let your talent steal the show at MCET Talent Hunts where dreams take center stage and brilliance takes flight.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-03.png' %}" alt="">
+                  </div>
+
+
+                  <div class="col-md-6">
+                    <h4 >TECHA<span style="color: #f5a425;">THONS</span></h4>
+                    <p>Techathons are your gateway to innovation and problem-solving. Dive into intense coding challenges, brainstorm with like-minded enthusiasts, and turn your ideas into groundbreaking solutions.</p>
+                    <p>With a focus on creativity and collaboration, our Techathons empower you to push boundaries and redefine what's possible in the tech world.</p>
+                  </div>
+
+
+                </div>
+              </article>
+            </section>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <section class="section coming-soon" data-section="section3" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div class="container" style="text-align: center;">
+        <div class="row">
+            <div class="col-md-9">
+                <div>
+                    <div class="top-content">
+                        <h6>Join our ranks today and secure your spot.</h6>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                              <fieldset style="text-align: center;">
+                                <button type="button" id="form-submit" class="button" onclick="redirectToForm()">Register</button>
+                            </fieldset>
+
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <script>
+    function redirectToForm() {
+        window.open("https://docs.google.com/forms/d/e/1FAIpQLSeXFdJus44Yu8F5gPHWWLtuobOHDk-baqIz51Y01ZH_yXgXVw/viewform?usp=sf_link", '_blank');
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="section courses" data-section="section4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Steal Your Show</h2>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+
+
+
+          <div class="item">
+            <img src="{% static 'assets/images/conclave.jpg' %}" alt="Course #1">
+            <div class="down-content">
+              <h4>Conclaves</h4>
+              <p>"At Techfest Conclaves, innovation's future unfolds as tech, entertainment, and creativity unite to inspire visionaries."</p>
+
+              <div class="text-button-pay">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="item">
+            <img src="{% static 'assets/images/robot.jpg' %}" alt="Course #2">
+            <div class="down-content">
+              <h4>Robotic Shows</h4>
+              <p>"Step into the world of wonder at our Robotic Show, where art, science, and technology converge, bringing machines to life."</p>
+
+              <div class="text-button-pay">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="item">
+            <img src="{% static 'assets/images/planet.jpg' %}" alt="Course #3">
+            <div class="down-content">
+              <h4>Planetarium</h4>
+              <p>"TechFest Planetarium: Journey through cosmos with cutting-edge tech, a memorable experience for space enthusiasts."</p>
+
+              <div class="text-button-pay">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="{% static 'assets/images/idea.jpg' %}" alt="Course #4">
+            <div class="down-content">
+              <h4>Ideathons</h4>
+              <p>"Ideathons ignite creativity, while Project Treasury guides innovation to fruition, supported by expert insights and guidance."</p>
+
+              <div class="text-button-free">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="item">
+            <img src="{% static 'assets/images/meta.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Metaverse</h4>
+              <p>"The metaverse is a digital cosmos where people connect, create, and explore an ever-expanding virtual universe of possibilities."</p>
+
+              <div class="text-button-free">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="{% static 'assets/images/auto-show.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Autoshow</h4>
+              <p>"At the Autoshow, sleek vehicles steal the spotlight, showcasing cutting-edge design, innovation, and the future of mobility."</p>
+
+              <div class="text-button-pay">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="{% static 'assets/images/extreme.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Extreme Wheels</h4>
+              <p>"Sleek, powerful machines accelerate into the future, capturing hearts with their innovative design and exhilarating performance."</p>
+
+              <div class="text-button-pay">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="{% static 'assets/images/film.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Film Festival</h4>
+              <p>"Masterpieces in the cinematic spotlight weave inspiring stories, leaving a profound, lasting impact on all who watch."</p>
+
+              <div class="text-button-free">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="item">
+            <img src="{% static 'assets/images/magic.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Mentalism & Magic Show</h4>
+              <p>
+                "Magic and mentalism blend reality; enchanting illusionists captivate, leaving spectators mesmerized and bewildered."</p>
+
+              <div class="text-button-pay">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="{% static 'assets/images/art.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Art Gallery</h4>
+              <p>"Within the art gallery's walls, creativity blooms, evoking emotions through strokes of genius and vibrant, soul-stirring canvases."</p>
+
+              <div class="text-button-pay">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="{% static 'assets/images/music.jpg' %} " alt="">
+            <div class="down-content">
+              <h4>Live Culture & Musical Events</h4>
+              <p>"Live events blend rhythms and traditions, crafting unforgettable, vibrant, music-rich memories for all."</p>
+
+              <div class="text-button-pay">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="{% static 'assets/images/gen_ai.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Generative AI</h4>
+              <p>"Gen AI, a technological marvel, breathes life into boundless possibilities, reshaping the future with extraordinary intelligence."</p>
+
+              <div class="text-button-pay">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="{% static 'assets/images/vr.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>AR / VR Workshops</h4>
+              <p>"AR/VR workshops immerse learners in  realities, fostering creativity and skills in the virtual world of transformative experiences."</p>
+
+              <div class="text-button-pay">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="{% static 'assets/images/boss.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Entrepreneurship Talk</h4>
+              <p>"Discover entrepreneurship's dynamic world at our tech fest, with visionaries igniting innovative spirits."</p>
+
+              <div class="text-button-pay">
+                <a href="https://forms.gle/wUH7jT29Fze6yjMS7" >Register <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="section video" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+
+
+          <div class="left-content">
+            <span>ELEGENCE IN TECH</span>
+            <h4>MTF <em>2K23</em></h4>
+            <p>"Step into an innovation symphony, where tech and creativity converge in a mesmerizing glimpse of tomorrow. MTF 2K23: The nucleus of digital transformation. Venture into the frontier of progress as ingenious minds collide, sparking ideas without bounds. This isn't an event; it's a revelation. Immerse in innovation's essence and surf the waves of change with us."</p>
+            <div class="main-button"><a rel="nofollow" href="{% static 'assets/documents/main-brochure.pdf' %}" target="_parent" download>Download Brochure</a></div>
+          </div>
+
+
+
+        </div>
+
+
+        <div class="col-md-6">
+          <article class="video-item">
+            <div class="video-caption">
+              <h4>Video Insights</h4>
+            </div>
+            <figure>
+              <a href="{% static 'assets/images/promo-video_edit.mp4' %}" class="play"><img src="{% static 'assets/images/main-thumb.jpg' %}"></a>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section contact" data-section="section7">
+    <div class="container ">
+        <div class="row"style="display: flex; justify-content: center;">
+
+
+
+
+
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>Let’s Keep In Touch</h2>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-md-6">
+                <form id="contact" action="" method="post">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <fieldset>
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                            <fieldset>
+                                <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset>
+                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="button">Send Now</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="col-md-6">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251052.2586140914!2d76.08352722081429!3d10.524943245883883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7c4821cd03507%3A0x16cd9f184da500fd!2sMalabar%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1696950560100!5m2!1sen!2sin" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+            <div>
+              <a href="https://www.malabarcet.ac.in/" >
+                <img src="{% static 'assets/logos/multi-logo.png' %}" height="210" width="540" class="img-fluid" alt="Logo 4">
+              </a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            <i class="fa fa-copyright"></i> Copyright 2023 by MCET | developed by
+            <a href="https://www.instagram.com/fasil_kppl/" rel="sponsored" target="_parent">Fasil-kppl With ❤️</a>
+            <a href="https://www.instagram.com/fasil_kppl/" rel="sponsored" target="_parent">
+              <i class="fab fa-instagram"></i> <!-- Instagram icon using FontAwesome -->
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/tabs.js' %}"></script>
+    <script src="{% static 'assets/js/video.js' %}"></script>
+    <script src="{% static 'assets/js/slick-slider.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
